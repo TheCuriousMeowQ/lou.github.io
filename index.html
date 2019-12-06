@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="font_icon/iconfont.css" />
+	</head>
+	<body>
+		<div class="fwContent">
+			<div class="fwLt">
+				<div class="fwLtCont">
+					<div class="ldImg">
+						<img src="img/xiaoqu.jpg" width="100%" height="100%">
+					</div>
+					<div class="ldMc">
+						<b>横栏小区</b><span class="xqbh">(201栋)</span>
+					</div>
+					<div class="sswg">
+						所属网格
+					</div>
+					<div class="ldxx">
+						<style type="text/css">
+							.xqbh {
+								font-size: 23px;
+								opacity: 0.8;
+							}
+
+							.ldBiaos {
+								position: absolute;
+								display: flex;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								margin: auto;
+								width: auto;
+								height: 2rem;
+								line-height: 2rem;
+								font-size: 16px;
+							}
+
+							.ldBiaos li {
+								position: relative;
+								margin: 0 1.5rem;
+							}
+
+							.ldBiaos li:nth-child(1)::after,
+							.ldBiaos li:nth-child(2)::after,
+							.ldBiaos li:nth-child(3)::after,
+							.ldBiaos li:nth-child(4)::after,
+							.ldBiaos li:nth-child(5)::after {
+								position: absolute;
+								content: '';
+								left: -2rem;
+								width: 10px;
+								height: 10px;
+								border-radius: 15px;
+								background: white;
+							}
+
+							.ldBiaos li:nth-child(1)::after {
+								border: 0.6rem solid #0899db;
+							}
+
+							.ldBiaos li:nth-child(2)::after {
+								border: 0.6rem solid #00d09c;
+							}
+
+							.ldBiaos li:nth-child(3)::after {
+								border: 0.6rem solid #3d6dfc;
+							}
+
+							.ldBiaos li:nth-child(4)::after {
+								border: 0.6rem solid #313c60;
+							}
+
+							.ldBiaos li:nth-child(5)::after {
+								width: 0.8rem;
+								height: 2rem;
+								left: -1.5rem;
+								background: url(img/icon/hebing.png) no-repeat;
+								background-size: 100%;
+							}
+
+							.jzxz {
+								background: url(img/icon/jianzhu.png) no-repeat;
+							}
+
+							.yezhu {
+								background: url(img/icon/yezhu.png) no-repeat;
+							}
+
+							.szd {
+								background: url(img/icon/suozai.png) no-repeat;
+							}
+
+							.iszd {
+								background: url(img/icon/fou.png) no-repeat;
+							}
+
+							.qiehuan {
+								width: 5rem;
+								display: none;
+							}
+
+							.qhCont {
+								width: 100%;
+								height: 100%;
+								display: flex;
+							}
+
+							.qhLt,
+							.qhRt {
+								flex: 1;
+								background: #5a6573;
+								margin: 15px 5px;
+								position: relative;
+
+							}
+
+							.qhLt {
+								opacity: 0.7;
+							}
+
+							.qhLt::after,
+							.qhRt::after {
+								position: absolute;
+								content: '';
+								width: 0;
+								height: 0;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								margin: auto;
+								border-width: 0 10px 10px;
+								border-style: solid;
+								border-color: transparent transparent white;
+							}
+
+							.qhLt::after {
+								transform: rotate(-90deg);
+							}
+
+							.qhRt::after {
+								transform: rotate(90deg);
+							}
+
+							.hebing {
+								position: relative;
+								width: 300px;
+								height: 60px;
+								border-radius: 0.5rem;
+								background: #0899db;
+								line-height: 60px;
+							}
+
+							.hbCont {
+								width: 100%;
+								height: 100%;
+								display: flex !important;
+								margin: 0 !important;
+							}
+
+							.hbCont div {
+								flex: 1;
+								position: relative;
+								margin: 0 !important;
+							}
+
+							.hebing .hbicon {
+								position: absolute;
+								width: 10px;
+								height: 22px;
+								background: url(img/icon/hebing.png) no-repeat;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								margin: auto;
+							}
+
+							.hebing .hbfw:nth-child(1)::after {
+								position: absolute;
+								content: '';
+								top: 0;
+								right: 0;
+								height: 100%;
+								width: 1px;
+								border-right: 1px dashed #fff;
+							}
+
+							.ldXxCont {
+								position: absolute !important;
+								display: block !important;
+								margin: 0 !important;
+								height: 100%;
+								width: 300%;
+							}
+
+							.ziz {
+								background: #00d09c;
+							}
+
+							.ldXxCont .fang {
+								transition: All 0.4s ease-in-out;
+								-webkit-transition: All 0.4s ease-in-out;
+								-moz-transition: All 0.4s ease-in-out;
+								-o-transition: All 0.4s ease-in-out;
+
+							}
+
+							.ldXxCont .fang:hover {
+								transform: translate(0, -10px);
+								-webkit-transform: translate(0, -10px);
+								-moz-transform: translate(0, -10px);
+								-o-transform: translate(0, -10px);
+								-ms-transform: translate(0, -10px);
+								-webkit-box-shadow: 0px 5px 15px #585858;
+								-moz-box-shadow: 0px 5px 15px #585858;
+								box-shadow: 0px 5px 15px #585858;
+							}
+							.fangke{
+								display: none;
+							}
+							.ldhTitle p {
+								line-height: 40px;
+								font-size: 20px;
+								padding-left: 1rem;
+								padding-right: 1rem;
+							}
+							.ldhTitle p span{
+								text-align: right;
+								float: right;
+							}
+						</style>
+						<ul>
+							<li>
+								<div class="ldxxTitle">
+									<span>建筑性质:</span>
+								</div>
+								<div class="ldxxTxt">
+									<span>自建房</span>
+									<div class="ldxxIcon jzxz"></div>
+								</div>
+							</li>
+							<li>
+								<div class="ldxxTitle">
+									<span>业主名称:</span>
+								</div>
+								<div class="ldxxTxt">
+									<span>刘峰</span>
+									<div class="ldxxIcon yezhu"></div>
+								</div>
+							</li>
+							<li>
+								<div class="ldxxTitle">
+									<span>所在地详址:</span>
+								</div>
+								<div class="ldxxTxt">
+									<span>横栏长安北路228号</span>
+									<div class="ldxxIcon szd"></div>
+								</div>
+							</li>
+							<li>
+								<div class="ldxxTitle">
+									<span>是否重点排查:</span>
+								</div>
+								<div class="ldxxTxt">
+									<div class="ldxxIcon iszd"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="ldM">
+
+					</div>
+				</div>
+			</div>
+			<div class="fwCont">
+				<div class="ldhTitle">
+					<b style="padding-left: 1rem;">房间总数：</b><span>32间</span>
+					<ul class="ldBiaos">
+						<li>商用</li>
+						<li>自住</li>
+						<li>出租</li>
+						<li>空置</li>
+						<li>合并房源</li>
+					</ul>
+				</div>
+				<ul class="ldListCont" id="ldListCont">
+
+				</ul>
+			</div>
+			<div class="fwRt">
+				<div class="ldhTitle">
+					<b style="padding-left: 1rem;">人口总数：</b><span>92人</span>
+				</div>
+				<div class="ldhTitle fangke">
+					<p>建筑面积：<span>m</span><span>200</span></p>
+					<p>人数：<span>人</span><span>4</span></p>
+				</div>
+				<div class="rkSerch">
+					<span>人口列表</span><input type="" name="" id="" value="" placeholder="姓名/联系方式/身份证" />
+					<button type="button" class="isSerchBtn"><span class="iconfont icon-sousuo"></span></button>
+				</div>
+				<ul class="rkListCont" id="rkListCont">
+
+				</ul>
+			</div>
+		</div>
+		<script src="lib/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				for (let i = 0; i < 20; i++) {
+					let _html =
+						`<li>
+						<div class="lc"><span>${20-i}</span>F</div>
+						<div class="lcXx">
+							<div class="ldXxCont" data-flag = 0>
+								<div class="fang yiz">
+									<span class="bianh">901</span>室<br>
+									<span>已住<span class="rens">3</span>人</span>
+								</div>
+								<div class="fang yiz ziz">
+									<span class="bianh">901</span>室<br>
+									<span>已住<span class="rens">3</span>人</span>
+								</div>
+								<div class="fang hebing">
+									<div class="hbCont">
+										<div class="hbfw">
+											<span class="hbbianhao">801室</span><br/>
+											<span class="hbmincheng">(广州)</span>
+										</div>
+										<div class="hbfw">
+											<span class="hbbianhao">701室</span><br/>
+											<span class="hbmincheng">(上海)</span>
+										</div>
+									</div>
+									<div class="hbicon"></div>
+								</div>
+								<div class="fang kongz">空置</div>
+
+								<div class="fang yiz">
+									<span class="bianh">901</span>室<br>
+									<span>已住<span class="rens">3</span>人</span>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="qiehuan">
+							<div class="qhCont">
+								<div class="qhLt"></div>
+								<div class="qhRt"></div>
+							</div>
+						</div>
+					</li>`;
+					$('#ldListCont').append(_html);
+				}
+
+				for (let i = 0; i < 20; i++) {
+					let _Html =
+						`<li>
+						<div class="rkImgCont">
+							<div class="rkImg"></div>
+						</div>
+						<div class="rkXx">
+							<div class="rkxxjb">
+								<span class="rkxm">xxxx</span>
+								<span class="rkdh">17666***841</span>
+							</div>
+							<div class="rkxxsf">
+								<span class="rksf">441781*******24154</span>
+								<span class="rklx">流动人口</span>
+							</div>
+						</div>
+					</li>`;
+					$('#rkListCont').append(_Html);
+				}
+
+				setTimeout(() => {
+					var ldList = $('#ldListCont').children('li');
+					$(ldList).each(function(i, e) {
+						console.log(e)
+						if (i % 2) {
+							this.style.background = '#41485e';
+							$(this).find('.lc').css('boxShadow', '1px 3px 18px 0 rgb(48, 54, 70)')
+						} else {
+							this.style.background = '#555d70'
+							$(this).find('.lc').css('boxShadow', '1px 3px 18px 0 rgb(50, 56, 74)')
+						}
+					});
+				}, 100);
+
+				$('#ldListCont').find('li').on('mousemove', function() {
+					$(this).find('.qiehuan').show();
+				});
+				$('#ldListCont').find('li').on('mouseout', function() {
+					$(this).find('.qiehuan').hide();
+				});
+				$('.qhLt').on('click', function() {
+					let maxWhe = []; //存放每个子元素的长度
+					var sum = 0; //每个子元素相加的总和
+					let ldXxCont = $(this).parent().parent().prev().find('.ldXxCont');
+					let ldXxContLt = parseInt($(this).parent().parent().prev().find('.ldXxCont').css('left'));
+					let dataflag = $(this).parent().parent().prev().find('.ldXxCont').data('flag');
+					let childLen = $(this).parent().parent().prev().find('.ldXxCont').children();
+
+					$(childLen).each(function(i, e) {
+						let innWid = parseInt($(e).innerWidth());
+						maxWhe.push(innWid);
+					});
+					maxWhe.forEach(function(ele) {
+						sum += ele;
+					});
+					console.log(ldXxContLt)
+					if (parseInt(ldXxContLt) == 0) {
+						$(this).css('opacity', 0.7);
+						return
+					} else {
+						$(this).parent().parent().prev().find('.ldXxCont').data('flag', --dataflag)
+						ldXxCont.stop().animate({
+							left: -dataflag * 250
+						}, 500);
+						if (parseInt(ldXxContLt) > 0) {
+							$(this).parent().parent().prev().find('.ldXxCont').data('flag', 0);
+							ldXxCont.stop().animate({
+								left: 0
+							}, 500);
+						}
+					}
+				})
+				$('.qhRt').on('click', function() {
+					let maxWhe = []; //存放每个子元素的长度
+					var sum = 0; //每个子元素相加的总和
+					let ldXxCont = $(this).parent().parent().prev().find('.ldXxCont');
+					let ldXxContLt = parseInt($(this).parent().parent().prev().find('.ldXxCont').css('left'));
+					let dataflag = $(this).parent().parent().prev().find('.ldXxCont').data('flag');
+					let childLen = $(this).parent().parent().prev().find('.ldXxCont').children();
+
+					$(childLen).each(function(i, e) {
+						let innWid = parseInt($(e).innerWidth());
+						maxWhe.push(innWid);
+					});
+					maxWhe.forEach(function(ele) {
+						sum += ele;
+					});
+
+					if (dataflag > childLen.length) {
+						return
+					} else {
+						$(this).parent().parent().prev().find('.ldXxCont').data('flag', ++dataflag);
+						ldXxCont.stop().animate({
+							left: -dataflag * 250
+						}, 500);
+						$(this).prev().css('opacity', 1);
+						if (parseInt(ldXxContLt) > 0) {
+							$(this).parent().parent().prev().find('.ldXxCont').data('flag', 0);
+							ldXxCont.stop().animate({
+								left: 0
+							}, 500);
+						}
+					}
+				});
+				
+				$('#ldListCont').children('li').off('click').on('click',function(){
+					$('.fangke').show();
+				});
+
+			}
+		</script>
+	</body>
+</html>
